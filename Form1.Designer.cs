@@ -59,6 +59,7 @@
             this.lblInstruction.Size = new System.Drawing.Size(515, 42);
             this.lblInstruction.TabIndex = 4;
             this.lblInstruction.Text = "Play the sound, and pick the correct animal!";
+            this.lblInstruction.Click += new System.EventHandler(this.lblInstruction_Click);
             // 
             // lblResult
             // 
