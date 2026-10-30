@@ -32,10 +32,10 @@
             this.lblInstruction = new System.Windows.Forms.Label();
             this.lblResult = new System.Windows.Forms.Label();
             this.lblResultTxt = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.imgDog = new System.Windows.Forms.PictureBox();
             this.imgPig = new System.Windows.Forms.PictureBox();
             this.imgCat = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgDog)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgPig)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCat)).BeginInit();
             this.SuspendLayout();
@@ -49,6 +49,7 @@
             this.btnSound.TabIndex = 3;
             this.btnSound.Text = "Click to play the sound!";
             this.btnSound.UseVisualStyleBackColor = true;
+            this.btnSound.Click += new System.EventHandler(this.btnSound_Click);
             // 
             // lblInstruction
             // 
@@ -59,7 +60,6 @@
             this.lblInstruction.Size = new System.Drawing.Size(515, 42);
             this.lblInstruction.TabIndex = 4;
             this.lblInstruction.Text = "Play the sound, and pick the correct animal!";
-            this.lblInstruction.Click += new System.EventHandler(this.lblInstruction_Click);
             // 
             // lblResult
             // 
@@ -81,15 +81,16 @@
             this.lblResultTxt.TabIndex = 6;
             this.lblResultTxt.Text = "Correct!";
             // 
-            // pictureBox3
+            // imgDog
             // 
-            this.pictureBox3.Image = global::Topic_11___Adding_Sounds_and_Randomization.Properties.Resources.dog;
-            this.pictureBox3.Location = new System.Drawing.Point(532, 115);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(242, 242);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
+            this.imgDog.Image = global::Topic_11___Adding_Sounds_and_Randomization.Properties.Resources.dog;
+            this.imgDog.Location = new System.Drawing.Point(532, 115);
+            this.imgDog.Name = "imgDog";
+            this.imgDog.Size = new System.Drawing.Size(242, 242);
+            this.imgDog.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgDog.TabIndex = 2;
+            this.imgDog.TabStop = false;
+            this.imgDog.Click += new System.EventHandler(this.imgDog_Click);
             // 
             // imgPig
             // 
@@ -100,6 +101,7 @@
             this.imgPig.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgPig.TabIndex = 1;
             this.imgPig.TabStop = false;
+            this.imgPig.Click += new System.EventHandler(this.imgPig_Click);
             // 
             // imgCat
             // 
@@ -110,6 +112,7 @@
             this.imgCat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgCat.TabIndex = 0;
             this.imgCat.TabStop = false;
+            this.imgCat.Click += new System.EventHandler(this.imgCat_Click);
             // 
             // Form1
             // 
@@ -120,12 +123,12 @@
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.lblInstruction);
             this.Controls.Add(this.btnSound);
-            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.imgDog);
             this.Controls.Add(this.imgPig);
             this.Controls.Add(this.imgCat);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgDog)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgPig)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCat)).EndInit();
             this.ResumeLayout(false);
@@ -137,7 +140,7 @@
 
         private System.Windows.Forms.PictureBox imgCat;
         private System.Windows.Forms.PictureBox imgPig;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox imgDog;
         private System.Windows.Forms.Button btnSound;
         private System.Windows.Forms.Label lblInstruction;
         private System.Windows.Forms.Label lblResult;
