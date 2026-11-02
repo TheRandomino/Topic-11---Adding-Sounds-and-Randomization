@@ -27,21 +27,58 @@ namespace Topic_11___Adding_Sounds_and_Randomization
 
         private void imgPig_Click(object sender, EventArgs e)
         {
-            if (randomSound == 0);
+            if (randomSound == 0)
+            {
+                lblResultTxt.Text = "Click the button.";
+            }
+            else if (randomSound == 2)
+            {
+                lblResultTxt.Text = "Correct!";
+            }
+            else
+            {
+                lblResultTxt.Text = "Wrong!";
+            }
+            randomSound = 0;
         }
 
         private void imgDog_Click(object sender, EventArgs e)
         {
-
+            if (randomSound == 0)
+            {
+                lblResultTxt.Text = "Click the button.";
+            }
+            else if (randomSound == 3)
+            {
+                lblResultTxt.Text = "Correct!";
+            }
+            else
+            {
+                lblResultTxt.Text = "Wrong!";
+            }
+            randomSound = 0;
         }
 
         private void imgCat_Click(object sender, EventArgs e)
         {
-
+            if (randomSound == 0)
+            {
+                lblResultTxt.Text = "Click the button.";
+            }
+            else if (randomSound == 1)
+            {
+                lblResultTxt.Text = "Correct!";
+            }
+            else
+            {
+                lblResultTxt.Text = "Wrong!";
+            }
+            randomSound = 0;
         }
 
         private void btnSound_Click(object sender, EventArgs e)
         {
+            lblResultTxt.Text = "";
             randomSound = generator.Next(1, 4);
             if (randomSound == cat)
             {

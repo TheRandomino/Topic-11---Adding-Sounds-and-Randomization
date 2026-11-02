@@ -77,9 +77,8 @@
             this.lblResultTxt.Font = new System.Drawing.Font("Papyrus", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResultTxt.Location = new System.Drawing.Point(127, 385);
             this.lblResultTxt.Name = "lblResultTxt";
-            this.lblResultTxt.Size = new System.Drawing.Size(121, 42);
+            this.lblResultTxt.Size = new System.Drawing.Size(0, 42);
             this.lblResultTxt.TabIndex = 6;
-            this.lblResultTxt.Text = "Correct!";
             // 
             // imgDog
             // 
